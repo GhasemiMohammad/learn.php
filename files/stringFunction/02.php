@@ -1,7 +1,42 @@
 <?php    
+    $str="Hello World!";
+    $str2 = "hello world!";
+    $number = 100000000;
     /* -------------------------------*/
-    echo "this is nl2br function : "."<br>";
-    echo "without nl2br :  this is one line \n this is another line"."<br>";
-    echo "with nl2br : ". nl2br("without nl2br :  this is one line \n this is another line");
+    echo "this is explode function : "."<br>";
+    $explodes=explode(" ",$str);
+    foreach($explodes as $explode)
+        echo $explode."<br>";
     /* -------------------------------*/
     echo "<hr>";
+    /* -------------------------------*/
+    echo "this is implode function : "."<br>";
+    echo implode(" ",$explodes);
+    /* -------------------------------*/
+    echo "<hr>";
+    /* -------------------------------*/
+    echo "this is substr function : "."<br>";
+    echo substr($str,6);
+    /* -------------------------------*/
+    echo "<hr>";
+    /* -------------------------------*/
+    echo "this is strstr function : "."<br>";
+    echo strstr($str,"l");
+    /* -------------------------------*/
+    echo "<hr>";
+    /* -------------------------------*/
+    echo "this is str_replace function : "."<br>";
+    echo str_replace("World","Shervin",$str);
+    /* -------------------------------*/
+    echo "<hr>";
+    /* -------------------------------*/
+    echo "this is str_repeat function : "."<br>";
+    echo str_repeat("Hello ",10);
+    /* -------------------------------*/
+    echo "<hr>";
+    /* -------------------------------*/
+    echo "this is str_word_count function : "."<br>";
+    echo str_word_count ($str);
+    /* -------------------------------*/
+    echo "<hr>";
+    
