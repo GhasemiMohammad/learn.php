@@ -5,10 +5,13 @@
         echo "</pre>";
         echo "<hr>";
     }
-    function echoValue($value){
+    function printValue($value){
         echo "<pre>";
             echo($value);
         echo "</pre>";
         echo "<hr>";
+    }
+    function br(){
+        echo "<br>";
     }
 ?>
