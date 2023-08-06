@@ -1,8 +1,5 @@
 <?php
     include("print.php");
-    $names=array("Shervin","Shahrzad","Aria","Roodabe");
-    $user=array("name"=>"Giti","family"=>"Iran Nejad","age"=>22,"gender"=>"female");
-
     /* -------------------------------*/
     echo "get size of array ".br();
     printValue(count($names));
