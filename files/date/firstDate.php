@@ -1,3 +1,3 @@
 <?php
-    date_default_timezone_set("Asia/Tehran");
+    include "../config/config.php";
     echo date("Y-m-d");

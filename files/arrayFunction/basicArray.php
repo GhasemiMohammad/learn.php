@@ -1,5 +1,5 @@
 <?php
-    include("print.php");
+    include("../config/config.php");
     /* -------------------------------*/
     echo "get size of array ".br();
     printValue(count($names));

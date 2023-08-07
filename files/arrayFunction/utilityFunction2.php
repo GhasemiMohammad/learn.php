@@ -1,5 +1,5 @@
 <?php
-    include("print.php");
+    include("../config/config.php");
     printArray($numbers);
     /* -------------------------------*/
     echo "array filter ";

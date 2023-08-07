@@ -1,5 +1,5 @@
 <?php
-    include("print.php");
+    include("../config/config.php");
     $rgb=["r"=>"red","g"=>"green","b"=>"blue"];
     $cmyk=["c"=>"cyan","m"=>"magenta","y"=>"yellow","k"=>"black"];
     $favColor=["y"=>"yellow","k"=>"black","g"=>"green","c"=>"cyan","b"=>"black"];
