@@ -66,6 +66,3 @@
     echo "array fill ";
     $arrFill=array_fill(2,5,"blue");
     printArray($arrFill);
-   
-    
-
