@@ -38,8 +38,34 @@
     echo "array difference ".br();
     printArray(array_diff_key($favColor,$rgb));
     /* -------------------------------*/
-    echo "array slice ".br();
+    echo "array slice ";
+    echo "<br>";
     print_r($user);
-    printArray(array_slice($user,1));
+    printArray(array_slice($user,2));
+    /* -------------------------------*/
+    echo "array splice ";
+    echo "<br>";
+    printArray($numbers);
+    array_splice($numbers,1,5,$cmyk);
+    printArray($numbers);
+    /* -------------------------------*/
+    echo "array shift ";
+    echo "<br>";
+    array_shift($numbers);
+    printArray($numbers);
+    /* -------------------------------*/
+    echo "array push ";
+    echo "<br>";
+    array_push($favColor,"red");
+    printArray($favColor);
+    /* -------------------------------*/
+    echo "array pop ";
+    array_pop($favColor);
+    printArray($favColor);
+    /* -------------------------------*/
+    echo "array fill ";
+    $arrFill=array_fill(2,5,"blue");
+    printArray($arrFill);
+   
     
 
