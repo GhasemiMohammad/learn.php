@@ -11,7 +11,7 @@
     }
     function printValue($value){
         echo "<pre>";
-            echo($value);
+        echo($value);
         echo "</pre>";
         echo "<hr>";
     }
