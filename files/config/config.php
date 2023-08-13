@@ -15,6 +15,10 @@
         echo "</pre>";
         echo "<hr>";
     }
+    function normalPrint($value){
+        echo $value ."<br>";
+    }
+    
     function br(){
         echo "<br>";
     }
