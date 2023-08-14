@@ -1,3 +1,29 @@
 <?php
     include "../config/config.php";
+    $users=[
+        "1"=>[
+            "name"=>"Mahsa",
+            "age"=>"23",
+            "email"=>"Mahsa@gmail.com"
+        ],
+        "2"=>[
+            "name"=>"Hadis",
+            "age"=>"21",
+            "email"=>"Hadis@gmail.com"
+        ],
+        "3"=>[
+            "name"=>"Kian",
+            "age"=>"11",
+            "email"=>"Kian@gmail.com" 
+        ],
+        "4"=>[
+            "name"=>"Mehrshad",
+            "age"=>"19",
+            "email"=>"Mehrshad@gmail.com" 
+        ]
+        ];
+    $encode=json_encode($users,JSON_FORCE_OBJECT);
+    normalPrint($encode);
+    $decode=json_decode($encode,true);
+    printArray($decode);
     
