@@ -1,4 +1,5 @@
 <?php
+    session_start();
     date_default_timezone_set("Asia/Tehran");
     $names=array("Shervin","Shahrzad","Aria","Roodabe");
     $user=array("name"=>"Giti","family"=>"Iran Nejad","age"=>22,"gender"=>"female");
