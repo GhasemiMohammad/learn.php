@@ -14,24 +14,24 @@ include_once "connect.php";
 
 // echo "<pre>";
 
-#smtp method
+#stmt method
 
 // $query = "SELECT * FROM people";
-// $smtp = $mySqlI->prepare($query);
-// $smtp->execute();
-// $smtp->bind_result($id, $fullName, $age, $sex, $isSingle);
-// $smtp->fetch();
-//  while ($smtp->fetch()) {
+// $stmt = $mySqlI->prepare($query);
+// $stmt->execute();
+// $stmt->bind_result($id, $fullName, $age, $sex, $isSingle);
+// $stmt->fetch();
+//  while ($stmt->fetch()) {
 //      echo "<br> " . $age;
 
 // }
 
 $query = "SELECT * FROM people";
-$smtp = $mySqlI->prepare($query);
-$smtp->execute();
+$stmt = $mySqlI->prepare($query);
+$stmt->execute();
 
-$smtp->store_result();
+$stmt->store_result();
 echo "<br>";
-echo $smtp->affected_rows;
-print_r($smtp);
+echo $stmt->affected_rows;
+print_r($stmt);
 echo "<br>";
