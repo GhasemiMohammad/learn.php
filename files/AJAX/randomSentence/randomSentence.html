@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Random Sentence</title>
+</head>
+<body>
+    <div class="container">
+        <h1>جملات تاثیر گذار</h1>
+        <div class="sentence" id="rSentence">
+            <p>این یک جمله تاثیر گذار است.</p>
+            <span>این نویسنده جمله تاثیر گذار است.</span>
+        </div>
+    </div>
+   <script type="text/javascript" src="../../../jquery-3.7.1.min.js"></script>
+   <script>
+        console.log("hello");
+    setInterval(function () {
+            $.ajax({
+                url: 'randomSentence.php',
+                success: function (response) {
+                    $("#rSentence").html(response);
+                }
+            });
+        }, 3000);
+   </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+body{
+    direction: rtl;
+    font-family: "vazir";
+      display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+div.container{
+  text-align: center;
+    
+}
+div.container h1{
+    text-align: center;
+}
+div.sentence{
+    background-color: #ededed;
+    padding: 2% 5%;
+    display: inline-block;
+    width: auto;
+    width:  80%;
+    border-radius:0.8em ;
+    
+}
+div.sentence p {
+    width: 100%;
+    font-size: 1.3em;
+}
