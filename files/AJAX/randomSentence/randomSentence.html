@@ -9,22 +9,25 @@
 <body>
     <div class="container">
         <h1>جملات تاثیر گذار</h1>
-        <div class="sentence" id="rSentence">
-            <p>این یک جمله تاثیر گذار است.</p>
-            <span>این نویسنده جمله تاثیر گذار است.</span>
+        <div class="sentence">
+            <p id="sentence">این یک جمله تاثیر گذار است.</p>
+            <span id="writer">این نویسنده جمله تاثیر گذار است.</span>
         </div>
     </div>
    <script type="text/javascript" src="../../../jquery-3.7.1.min.js"></script>
    <script>
-        console.log("hello");
-    setInterval(function () {
+        setInterval(function(){
             $.ajax({
-                url: 'randomSentence.php',
-                success: function (response) {
-                    $("#rSentence").html(response);
+                url :'randomSentence.php',
+                success:function(response){
+                   let sentence = response;
+                   let split = sentence.split("<br>");
+                   $("#sentence").html(split[0]);
+                   $("#writer").html(split[1]);
+
                 }
             });
-        }, 3000);
+        },1000);
    </script>
 </body>
 </html>
