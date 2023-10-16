@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>search</title>
+</head>
+<body>
+    <form action="response.php" method="post" id="searchForm">
+        <label for="search">جستجو</label>
+        <input type="text" id="search" name="search" placeholder="متن خود را وارد کنید" required>
+        <div id="result" class="result">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </form>
+
+
+    <script src="../../../jquery-3.7.1.min.js"></script>
+    <script>
+       $(document).ready(function(){
+        let result = $("#result");
+        let searchBox = $("#search");
+        let form = $("#searchForm");
+        searchBox.on("input", function() {
+            result.css("display","flex");
+            let searchQuery = $(this).val();
+            $.ajax({
+                method: form.attr("method"),
+                url: form.attr("action"),
+                data: {
+                    value: searchQuery
+                },
+                success: function(response){
+                    result.html(response);
+                    result.css("display","block");
+                }
+            });
+        });
+       });
+    </script>
+</body>
+</html>

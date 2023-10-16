@@ -23,10 +23,10 @@
     <script src="../../../jquery-3.7.1.min.js"></script>
     <script>
         $(document).ready(function() {
-            let form = $("#provinceForm"); // اصلاح انتخاب فرم با استفاده از شناسه
+            let form = $("#provinceForm");
             let result = $("#result");
             form.submit(function(event) {
-                event.preventDefault(); // جلوگیری از ارسال فرم به صورت پیش‌فرض
+                event.preventDefault(); 
                 result.css("display", "flex")
                 $.ajax({
                     url: form.attr('action'),
