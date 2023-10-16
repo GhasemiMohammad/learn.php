@@ -1,0 +1,20 @@
+{
+    "name": "mohammad/testcomposer",
+    "description": "this is a test for learn composer",
+    "type": "library",
+    "require": {
+        "hekmatinasser/verta": "^1.12"
+    },
+    "require-dev": {
+        "hekmatinasser/verta": "^1.12",
+		"fzaninotto/faker": "^1.9.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "GhasemiMohammad",
+            "email": "mohammadghasemi824@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
